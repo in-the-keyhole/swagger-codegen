@@ -1079,7 +1079,7 @@ limitations under the License.
 ------
 # Keyhole Software Custom Code Generator
 
-### Generate a Boilerplate Customer Swagger Custom Client Generator 
+### Generate Boilerplate for KHS Client Generator 
 
 The following instructions cover cloning swagger codegen, then building it to generate a boilerplate code generator 
  generating a client for Cobol services. The following one-time procedure creates boilerplate code that we modify
