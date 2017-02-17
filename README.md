@@ -1075,3 +1075,27 @@ limitations under the License.
 
 ---
 <img src="http://swagger.io/wp-content/uploads/2016/02/logo.jpg"/>
+
+------
+# Keyhole Software Custom Code Generator
+
+### Generate a Boilerplate Customer Swagger Custom Client Generator 
+
+The following instructions cover cloning swagger codegen, then building it to generate a boilerplate code generator 
+ generating a client for Cobol services. The following one-time procedure creates boilerplate code that we modify
+for generating information about clients that access Cobol services. After modification we use 'mvn package' to
+make the custom generator available via the swagger codegen Maven plugin. 
+
+1. Clone swagger codegen from gitHub at [https://github.com/swagger-api/swagger-codegen](https://github.com/swagger-api/swagger-codegen)
+
+    `mvn clean install`
+
+2. Create `cobLibarary` and `cobClientCodegen` from `git/swagger-codegen` by running the following from a command line
+in the root of the local swagger codegen project:
+
+```
+    java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar meta -o output/cobLibrary -n cobClientCodegen -p com.keyholesoftware.codegen
+```
+
+
+
